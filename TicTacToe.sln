@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{6CCDAB98-66CD-4D5B-94C3-DD0CAC6DB859}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.UnitTests", "TicTacToe.UnitTests\TicTacToe.UnitTests.csproj", "{BA627BDF-FF19-4A79-A02E-947F9AE15B18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{6CCDAB98-66CD-4D5B-94C3-DD0CAC6DB859}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CCDAB98-66CD-4D5B-94C3-DD0CAC6DB859}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CCDAB98-66CD-4D5B-94C3-DD0CAC6DB859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA627BDF-FF19-4A79-A02E-947F9AE15B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA627BDF-FF19-4A79-A02E-947F9AE15B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA627BDF-FF19-4A79-A02E-947F9AE15B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA627BDF-FF19-4A79-A02E-947F9AE15B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

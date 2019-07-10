@@ -5,7 +5,7 @@ namespace TicTacToe
 {
 	public static class Game
 	{                      
-		public static void DrawTable()
+		private static void DrawTable()
 		{
             Console.Write(
                 "+---+---+---+\n" +
@@ -18,7 +18,7 @@ namespace TicTacToe
             );
         }
 
-		public static bool GameState(string[,] coordinates)
+		private static bool GameState(string[,] coordinates)
 		{
             if (coordinates[0, 0].Equals("X") && coordinates[0, 1].Equals("X") && coordinates[0, 2].Equals("X"))
             {
