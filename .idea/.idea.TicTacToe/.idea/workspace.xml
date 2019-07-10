@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbfef0d6-69ae-4e24-ad39-fe0dfcfe0d85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/TicTacToe.UnitTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.UnitTests/obj/Debug/netcoreapp2.2/TicTacToe.UnitTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/bin/Debug/netcoreapp2.2/TicTacToe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/bin/Debug/netcoreapp2.2/TicTacToe.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/bin/Debug/netcoreapp2.2/TicTacToe.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/bin/Debug/netcoreapp2.2/TicTacToe.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/obj/Debug/netcoreapp2.2/TicTacToe.pdb" afterDir="false" />
     </list>
@@ -23,11 +33,11 @@
             <entry file="file://$PROJECT_DIR$/TicTacToe/Program.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
-                  <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+                  <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
                   <folding>
-                    <marker date="1562747196334" expanded="true" signature="34:164" ph="{...}" />
-                    <marker date="1562747196334" expanded="true" signature="54:162" ph="{...}" />
-                    <marker date="1562747196334" expanded="true" signature="108:156" ph="{...}" />
+                    <marker date="1562759504230" expanded="true" signature="34:164" ph="{...}" />
+                    <marker date="1562759504230" expanded="true" signature="54:162" ph="{...}" />
+                    <marker date="1562759504230" expanded="true" signature="108:156" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -36,33 +46,83 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/TicTacToe/Game.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+                <state relative-caret-position="-589">
+                  <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
                   <folding>
-                    <marker date="1562750761878" expanded="true" signature="6:47" ph="..." />
-                    <marker date="1562750761878" expanded="true" signature="68:5804" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="96:5802" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="155:461" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="517:3784" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="634:796" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="909:1071" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="1184:1346" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="1459:1621" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="1734:1896" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="2009:2171" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="2284:2446" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="2559:2721" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="2834:2996" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="3109:3271" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="3591:3754" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="3830:5799" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="4059:4128" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="4201:5406" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="4302:5381" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="4875:5196" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="4995:5041" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="5053:5099" ph="{...}" />
-                    <marker date="1562750761878" expanded="true" signature="5539:5795" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="6:47" ph="..." />
+                    <marker date="1562761905337" expanded="true" signature="68:6202" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="96:6200" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="394:700" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="756:4023" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="873:1035" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="1148:1310" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="1423:1585" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="1698:1860" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="1973:2135" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="2248:2410" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="2523:2685" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="2798:2960" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="3073:3235" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="3348:3510" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="3830:3993" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4056:4411" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4186:4407" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4449:4510" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4550:5788" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4631:5784" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="4701:5759" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="5302:5610" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="5407:5453" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="5465:5511" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="5822:6197" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="5972:6039" ph="{...}" />
+                    <marker date="1562761905337" expanded="true" signature="6067:6193" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TicTacToe/Player.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="435">
+                  <caret line="29" column="43" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="43" />
+                  <folding>
+                    <marker date="1562759891446" expanded="true" signature="6:47" ph="..." />
+                    <marker date="1562759891446" expanded="true" signature="68:3131" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="91:3129" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="163:201" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="260:483" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="310:448" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="364:434" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="545:3122" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="608:840" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="655:730" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="751:826" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="889:1121" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="936:1011" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1032:1107" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1171:1403" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1218:1293" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1314:1389" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1464:1696" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1511:1586" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1607:1682" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1745:1977" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1792:1867" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="1888:1963" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2027:2259" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2074:2149" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2170:2245" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2317:2549" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2364:2439" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2460:2535" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2598:2830" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2645:2720" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2741:2816" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2880:3112" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="2927:3002" ph="{...}" />
+                    <marker date="1562759891446" expanded="true" signature="3023:3098" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -73,46 +133,15 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/TicTacToe/Player.cs">
+            <entry file="file://$PROJECT_DIR$/TicTacToe/Computer.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
                   <folding>
-                    <marker date="1562757215098" expanded="true" signature="6:47" ph="..." />
-                    <marker date="1562757215098" expanded="true" signature="67:3118" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="90:3116" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="158:196" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="255:478" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="305:443" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="359:429" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="532:3109" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="595:827" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="642:717" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="738:813" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="876:1108" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="923:998" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1019:1094" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1158:1390" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1205:1280" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1301:1376" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1451:1683" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1498:1573" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1594:1669" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1732:1964" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1779:1854" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="1875:1950" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2014:2246" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2061:2136" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2157:2232" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2304:2536" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2351:2426" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2447:2522" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2585:2817" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2632:2707" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2728:2803" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2867:3099" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="2914:2989" ph="{...}" />
-                    <marker date="1562757215098" expanded="true" signature="3010:3085" ph="{...}" />
+                    <marker date="1562760001277" expanded="true" signature="34:300" ph="{...}" />
+                    <marker date="1562760001277" expanded="true" signature="71:298" ph="{...}" />
+                    <marker date="1562760001277" expanded="true" signature="128:196" ph="{...}" />
+                    <marker date="1562760001277" expanded="true" signature="259:292" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -127,6 +156,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/TicTacToe/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTacToe/Computer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToe/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToe/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToe.UnitTests/PlayerTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -135,14 +165,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TicTacToe/Program.cs" />
         <option value="$PROJECT_DIR$/UnitTesting/TestGame.cs" />
         <option value="$PROJECT_DIR$/TicTacToe.Tests/TestGame.cs" />
         <option value="$PROJECT_DIR$/TicTacToe.UnitTests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/TicTacToe.UnitTests/GameTests.cs" />
         <option value="$PROJECT_DIR$/TicTacToe.UnitTests/PlayerTests.cs" />
-        <option value="$PROJECT_DIR$/TicTacToe/Game.cs" />
+        <option value="$PROJECT_DIR$/TicTacToe/Program.cs" />
         <option value="$PROJECT_DIR$/TicTacToe/Player.cs" />
+        <option value="$PROJECT_DIR$/TicTacToe/Computer.cs" />
+        <option value="$PROJECT_DIR$/TicTacToe/Game.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +196,11 @@
           <expand>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TicTacToe" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TicTacToe" type="24d0babc:SolutionExplorerModelNode" />
               <item name="TicTacToe" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
@@ -229,12 +265,12 @@
       <updated>1562746835889</updated>
       <workItem from="1562746840738" duration="2093000" />
       <workItem from="1562748978335" duration="916000" />
-      <workItem from="1562749938102" duration="3868000" />
+      <workItem from="1562749938102" duration="8488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6877000" />
+    <option name="totallyTimeSpent" value="11497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,7 +290,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="691" y="555" width="824" height="352" id="Run" order="2" type="WINDOWED" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" x="984" y="530" width="824" height="352" id="Run" order="2" type="WINDOWED" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,7 +303,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.3298969" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.3298969" />
+      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.13027179" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -334,88 +370,105 @@
     <entry file="file://$PROJECT_DIR$/TicTacToe/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <marker date="1562747196334" expanded="true" signature="34:164" ph="{...}" />
-            <marker date="1562747196334" expanded="true" signature="54:162" ph="{...}" />
-            <marker date="1562747196334" expanded="true" signature="108:156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TicTacToe/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
-          <folding>
-            <marker date="1562750761878" expanded="true" signature="6:47" ph="..." />
-            <marker date="1562750761878" expanded="true" signature="68:5804" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="96:5802" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="155:461" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="517:3784" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="634:796" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="909:1071" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="1184:1346" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="1459:1621" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="1734:1896" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="2009:2171" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="2284:2446" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="2559:2721" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="2834:2996" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="3109:3271" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="3591:3754" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="3830:5799" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="4059:4128" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="4201:5406" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="4302:5381" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="4875:5196" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="4995:5041" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="5053:5099" ph="{...}" />
-            <marker date="1562750761878" expanded="true" signature="5539:5795" ph="{...}" />
+            <marker date="1562759504230" expanded="true" signature="34:164" ph="{...}" />
+            <marker date="1562759504230" expanded="true" signature="54:162" ph="{...}" />
+            <marker date="1562759504230" expanded="true" signature="108:156" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TicTacToe/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="435">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="43" />
           <folding>
-            <marker date="1562757215098" expanded="true" signature="6:47" ph="..." />
-            <marker date="1562757215098" expanded="true" signature="67:3118" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="90:3116" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="158:196" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="255:478" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="305:443" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="359:429" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="532:3109" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="595:827" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="642:717" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="738:813" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="876:1108" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="923:998" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1019:1094" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1158:1390" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1205:1280" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1301:1376" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1451:1683" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1498:1573" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1594:1669" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1732:1964" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1779:1854" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="1875:1950" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2014:2246" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2061:2136" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2157:2232" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2304:2536" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2351:2426" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2447:2522" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2585:2817" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2632:2707" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2728:2803" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2867:3099" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="2914:2989" ph="{...}" />
-            <marker date="1562757215098" expanded="true" signature="3010:3085" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="6:47" ph="..." />
+            <marker date="1562759891446" expanded="true" signature="68:3131" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="91:3129" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="163:201" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="260:483" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="310:448" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="364:434" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="545:3122" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="608:840" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="655:730" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="751:826" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="889:1121" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="936:1011" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1032:1107" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1171:1403" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1218:1293" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1314:1389" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1464:1696" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1511:1586" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1607:1682" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1745:1977" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1792:1867" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="1888:1963" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2027:2259" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2074:2149" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2170:2245" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2317:2549" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2364:2439" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2460:2535" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2598:2830" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2645:2720" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2741:2816" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2880:3112" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="2927:3002" ph="{...}" />
+            <marker date="1562759891446" expanded="true" signature="3023:3098" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTacToe/Computer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <marker date="1562760001277" expanded="true" signature="34:300" ph="{...}" />
+            <marker date="1562760001277" expanded="true" signature="71:298" ph="{...}" />
+            <marker date="1562760001277" expanded="true" signature="128:196" ph="{...}" />
+            <marker date="1562760001277" expanded="true" signature="259:292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTacToe/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589">
+          <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+          <folding>
+            <marker date="1562761905337" expanded="true" signature="6:47" ph="..." />
+            <marker date="1562761905337" expanded="true" signature="68:6202" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="96:6200" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="394:700" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="756:4023" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="873:1035" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="1148:1310" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="1423:1585" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="1698:1860" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="1973:2135" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="2248:2410" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="2523:2685" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="2798:2960" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="3073:3235" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="3348:3510" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="3830:3993" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4056:4411" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4186:4407" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4449:4510" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4550:5788" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4631:5784" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="4701:5759" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="5302:5610" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="5407:5453" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="5465:5511" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="5822:6197" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="5972:6039" ph="{...}" />
+            <marker date="1562761905337" expanded="true" signature="6067:6193" ph="{...}" />
           </folding>
         </state>
       </provider>

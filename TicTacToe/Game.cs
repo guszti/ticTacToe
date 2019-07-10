@@ -4,7 +4,16 @@ using System.Collections.Generic;
 namespace TicTacToe
 {
 	public static class Game
-	{                      
+	{
+		private static List<Player> _moves;
+		private static bool _gameOn;
+		private static int _x;
+		private static int _y;
+		private static int _player;
+		private static Player _playa;
+		private static ConsoleKeyInfo _keyInfo;
+		private static string[,] _table;
+		
 		private static void DrawTable()
 		{
             Console.Write(
@@ -89,58 +98,74 @@ namespace TicTacToe
 
             return true;
 		}
-              
-		public static void RunGame()
+
+		private static int GameMenu()
 		{
-            bool gameOn = true;
-            int x = 6;
-            int y = 3;
-            int player = 0;
-            Player playa;
-			ConsoleKeyInfo keyInfo;
-			List<Player> moves = new List<Player>();
-			string[,] table = {{" "," "," "},
-							   {" "," "," "},
-							   {" "," "," "}
-			};
+			Console.WriteLine("1: New PvP game 2: New PvE game 3: Exit");
+			_keyInfo = Console.ReadKey(true);
+			switch(_keyInfo.Key)
+			{
+				case ConsoleKey.D1:
+					Console.Clear();
+					return 1;
+				case ConsoleKey.D2:
+					Console.Clear();
+					return 2;
+				case ConsoleKey.D3:
+					Console.Clear();
+					return 3;
+				default:
+					return 3;
+			}
+		}
 
+		private static void SinglePlayer()
+		{
+			Console.WriteLine("Single player game started!");
+			
+			RunGame();
+		}
+
+		private static void PlayerVsPlayer()
+		{
 			DrawTable();
-			Console.SetCursorPosition(x, y);
+			Console.SetCursorPosition(_x, _y);
+			
+			while (_gameOn)
+			{
+				_keyInfo = Console.ReadKey(true);
 
-			while (gameOn)
-            {
-                keyInfo = Console.ReadKey(true);
-
-                switch (keyInfo.Key)
+				switch (_keyInfo.Key)
 				{
 					case ConsoleKey.DownArrow:
-						if (y < 5)
-							y += 2;
-						Console.SetCursorPosition(x, y);
+						if (_y < 5)
+							_y += 2;
+						Console.SetCursorPosition(_x, _y);
 						break;
 					case ConsoleKey.UpArrow:
-						if (y > 1)
-							y -= 2;
-						Console.SetCursorPosition(x, y);
+						if (_y > 1)
+							_y -= 2;
+						Console.SetCursorPosition(_x, _y);
 						break;
 					case ConsoleKey.RightArrow:
-						if (x < 10)
-							x += 4;
-						Console.SetCursorPosition(x, y);
+						if (_x < 10)
+							_x += 4;
+						Console.SetCursorPosition(_x, _y);
 						break;
 					case ConsoleKey.LeftArrow:
-						if (x > 2)
-							x -= 4;
-						Console.SetCursorPosition(x, y);
+						if (_x > 2)
+							_x -= 4;
+						Console.SetCursorPosition(_x, _y);
 						break;
 					case ConsoleKey.Enter:
-						playa = new Player(x, y);
-						if (playa.CheckPlace(moves) == true)
+						_playa = new Player(_x, _y);
+						
+						if (_playa.CheckPlace(_moves) == true)
 						{
-							moves.Add(playa);
-                            playa.AddMove(table, player);
+							_moves.Add(_playa);
+							_playa.AddMove(_table, _player);
 
-							if (player % 2 == 0)
+							if (_player % 2 == 0)
 							{
 								Console.Write("X");
 							}
@@ -149,30 +174,46 @@ namespace TicTacToe
 								Console.Write("O");
 							}
 							
-						    x = 6; y = 3;
-							Console.SetCursorPosition(x, y);
-							player++;
+							_x = 6; _y = 3;
+							Console.SetCursorPosition(_x, _y);
+							_player++;
 						}
-                        gameOn = GameState(table);
+						
+						_gameOn = GameState(_table);
 						break;
-                    case ConsoleKey.Escape:
-                        gameOn = false;
-                        break;
+					case ConsoleKey.Escape:
+						Console.Clear();
+						_gameOn = false;
+						break;
 				}                    
 			}
-
-            Console.WriteLine("1: New game  2: Exit");
-            keyInfo = Console.ReadKey(true);
-            switch(keyInfo.Key)
-            {
-                case ConsoleKey.D1:
-                    Console.Clear();
-                    RunGame();
-                    break;
-                case ConsoleKey.D2:
-	                Console.Clear();
-                    break;
-            }
+			
+			RunGame();
+		}
+		
+		public static void RunGame()
+		{
+            _gameOn = true;
+            _x = 6;
+            _y = 3;
+            _player = 0;
+			_moves = new List<Player>();
+			_table = new [,] {{" "," "," "},
+							  {" "," "," "},
+							  {" "," "," "}
+			};
+			
+			switch (GameMenu())
+			{
+				case 1:
+					PlayerVsPlayer();
+					break;
+				case 2:
+					SinglePlayer();
+					break;
+				case 3:
+					break;
+			}
 		}
 	}
 }

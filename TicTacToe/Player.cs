@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+
 namespace TicTacToe
 {
 	public class Player
 	{
-		private int x;
-		private int y;
+		protected int x;
+		protected int y;
 
 		public Player(int x, int y)
 		{
@@ -26,7 +27,7 @@ namespace TicTacToe
             return true;
         }
 
-        public void AddMove(string[,] table, int id)
+        public virtual void AddMove(string[,] table, int id)
         {
             if (this.x == 2 && this.y == 1) //line 1
             {

@@ -12,3 +12,6 @@ C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\obj\Debug\netcoreap
 C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\obj\Debug\netcoreapp2.2\TicTacToe.UnitTests.AssemblyInfo.cs
 C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\obj\Debug\netcoreapp2.2\TicTacToe.UnitTests.dll
 C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\obj\Debug\netcoreapp2.2\TicTacToe.UnitTests.pdb
+C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\bin\Debug\netcoreapp2.2\TicTacToe.dll
+C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\bin\Debug\netcoreapp2.2\TicTacToe.pdb
+C:\Users\i509507\RiderProjects\TicTacToe\TicTacToe.UnitTests\obj\Debug\netcoreapp2.2\TicTacToe.UnitTests.csproj.CopyComplete
