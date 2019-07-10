@@ -7,28 +7,18 @@ namespace TicTacToe
 		private int x;
 		private int y;
 
-		public Player(int X, int Y)
+		public Player(int x, int y)
 		{
-			x = X;
-			y = Y;
+			this.x = x;
+			this.y = y;
 		}
-
-        public int X
-		{
-			get { return x; }
-		}
-
-		public int Y
-        {
-            get { return y; }
-        }
-
-		public bool CheckPlace(List<Player> move)
+        
+        public bool CheckPlace(List<Player> move)
         {
 
             foreach (Player p in move)
             {
-				if (p.X == this.X && p.Y == this.Y)
+				if (p.x == this.x && p.y == this.y)
                 {
                     return false;
                 }
@@ -38,7 +28,7 @@ namespace TicTacToe
 
         public void AddMove(string[,] table, int id)
         {
-            if (this.X == 2 && this.Y == 1) //line 1
+            if (this.x == 2 && this.y == 1) //line 1
             {
                 if (id % 2 == 0)
                 {
@@ -49,7 +39,7 @@ namespace TicTacToe
                     table[0, 0] = "O";
                 }
             }
-            else if (this.X == 6 && this.Y == 1)
+            else if (this.x == 6 && this.y == 1)
             {
                 if (id % 2 == 0)
                 {
@@ -60,7 +50,7 @@ namespace TicTacToe
                     table[0, 1] = "O";
                 }
             }
-            else if (this.X == 10 && this.Y == 1)
+            else if (this.x == 10 && this.y == 1)
             {
                 if (id % 2 == 0)
                 {
@@ -71,7 +61,7 @@ namespace TicTacToe
                     table[0, 2] = "O";
                 }
             }
-            else if (this.X == 2 && this.Y == 3)    //line 2
+            else if (this.x == 2 && this.y == 3)    //line 2
             {
                 if (id % 2 == 0)
                 {
@@ -82,7 +72,7 @@ namespace TicTacToe
                     table[1, 0] = "O";
                 }
             }
-            else if (this.X == 6 && this.Y == 3)
+            else if (this.x == 6 && this.y == 3)
             {
                 if (id % 2 == 0)
                 {
@@ -93,7 +83,7 @@ namespace TicTacToe
                     table[1, 1] = "O";
                 }
             }
-            else if (this.X == 10 && this.Y == 3)
+            else if (this.x == 10 && this.y == 3)
             {
                 if (id % 2 == 0)
                 {
@@ -104,7 +94,7 @@ namespace TicTacToe
                     table[1, 2] = "O";
                 }
             }
-            else if (this.X == 2 && this.Y == 5) //line 3
+            else if (this.x == 2 && this.y == 5) //line 3
             {
                 if (id % 2 == 0)
                 {
@@ -115,7 +105,7 @@ namespace TicTacToe
                     table[2, 0] = "O";
                 }
             }
-            else if (this.X == 6 && this.Y == 5)
+            else if (this.x == 6 && this.y == 5)
             {
                 if (id % 2 == 0)
                 {
@@ -126,7 +116,7 @@ namespace TicTacToe
                     table[2, 1] = "O";
                 }
             }
-            else if (this.X == 10 && this.Y == 5)
+            else if (this.x == 10 && this.y == 5)
             {
                 if (id % 2 == 0)
                 {

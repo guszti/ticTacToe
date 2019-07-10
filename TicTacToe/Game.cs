@@ -98,11 +98,11 @@ namespace TicTacToe
             int player = 0;
             Player playa;
 			ConsoleKeyInfo keyInfo;
-			List<Player> moves = new List<Player>(); ;
+			List<Player> moves = new List<Player>();
 			string[,] table = {{" "," "," "},
 							   {" "," "," "},
 							   {" "," "," "}
-				};
+			};
 
 			DrawTable();
 			Console.SetCursorPosition(x, y);
@@ -167,11 +167,10 @@ namespace TicTacToe
             {
                 case ConsoleKey.D1:
                     Console.Clear();
-                    gameOn = true;
-                    player = 0;
                     RunGame();
                     break;
                 case ConsoleKey.D2:
+	                Console.Clear();
                     break;
             }
 		}
