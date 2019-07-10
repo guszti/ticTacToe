@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace TicTacToe
 {
@@ -13,6 +14,11 @@ namespace TicTacToe
 		private static Player _playa;
 		private static ConsoleKeyInfo _keyInfo;
 		private static string[,] _table;
+
+		public static List<Player> _Moves
+		{
+			get { return _moves; }
+		}
 		
 		private static void DrawTable()
 		{
@@ -103,6 +109,7 @@ namespace TicTacToe
 		{
 			Console.WriteLine("1: New PvP game 2: New PvE game 3: Exit");
 			_keyInfo = Console.ReadKey(true);
+			
 			switch(_keyInfo.Key)
 			{
 				case ConsoleKey.D1:
@@ -121,7 +128,73 @@ namespace TicTacToe
 
 		private static void SinglePlayer()
 		{
-			Console.WriteLine("Single player game started!");
+			DrawTable();
+			Console.SetCursorPosition(_x, _y);
+			
+			while (_gameOn)
+			{
+				if (_player % 2 == 0)
+				{
+					_keyInfo = Console.ReadKey(true);
+
+					switch (_keyInfo.Key)
+					{
+						case ConsoleKey.DownArrow:
+							if (_y < 5)
+								_y += 2;
+							Console.SetCursorPosition(_x, _y);
+							break;
+						case ConsoleKey.UpArrow:
+							if (_y > 1)
+								_y -= 2;
+							Console.SetCursorPosition(_x, _y);
+							break;
+						case ConsoleKey.RightArrow:
+							if (_x < 10)
+								_x += 4;
+							Console.SetCursorPosition(_x, _y);
+							break;
+						case ConsoleKey.LeftArrow:
+							if (_x > 2)
+								_x -= 4;
+							Console.SetCursorPosition(_x, _y);
+							break;
+						case ConsoleKey.Enter:
+							_playa = new Player(_x, _y);
+						
+							if (_playa.CheckPlace(_moves) == true)
+							{
+								_moves.Add(_playa);
+								_playa.AddMove(_table, _player);
+
+								if (_player % 2 == 0)
+								{
+									Console.Write("X");
+								}
+								else
+								{
+									Console.Write("O");
+								}
+							
+								_x = 6; _y = 3;
+								Console.SetCursorPosition(_x, _y);
+								_player++;
+							}
+						
+							_gameOn = GameState(_table);
+							break;
+						case ConsoleKey.Escape:
+							Console.Clear();
+							_gameOn = false;
+							break;
+					}
+				}
+				else
+				{
+					_playa = Computer.ClaculateMove(_table);
+					_playa.AddMove(_table, _player);
+				}
+			}
 			
 			RunGame();
 		}

@@ -8,6 +8,12 @@ namespace TicTacToe
 		protected int x;
 		protected int y;
 
+        public Player()
+        {
+            this.x = 0;
+            this.y = 0;
+        }
+        
 		public Player(int x, int y)
 		{
 			this.x = x;
