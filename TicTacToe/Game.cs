@@ -229,9 +229,12 @@ namespace TicTacToe
 					_playa = _playa.CalculateMove(_table);
 					_moves.Add(_playa);
 					_playa.AddMove(_table, _player);
-
+					
 					_x = 6; _y = 3;
 					Console.SetCursorPosition(_x, _y);
+					
+					_gameOn = GameState(_table);
+
 					_player++;
 				}
 			}

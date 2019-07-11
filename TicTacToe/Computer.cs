@@ -23,6 +23,8 @@ namespace TicTacToe
 
                     y += 2;
                 }
+
+                y = 1;
                 x += 4;
             }
             
