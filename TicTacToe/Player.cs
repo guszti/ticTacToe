@@ -7,18 +7,14 @@ namespace TicTacToe
 	{
 		protected int x;
 		protected int y;
-
-        public Player()
-        {
-            this.x = 0;
-            this.y = 0;
-        }
         
-		public Player(int x, int y)
+        public Player(int x, int y)
 		{
 			this.x = x;
 			this.y = y;
 		}
+        
+        public virtual Player CalculateMove(string[,] table){ return new Player(0, 0); }
         
         public bool CheckPlace(List<Player> move)
         {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 
 namespace TicTacToe
@@ -65,6 +66,26 @@ namespace TicTacToe
                 Console.WriteLine("The winner is X!");
                 return false;
             }
+            if (coordinates[0, 1].Equals("X") && coordinates[1, 1].Equals("X") && coordinates[2, 1].Equals("X"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is X!");
+	            return false;
+            }
+            if (coordinates[0, 0].Equals("X") && coordinates[1, 0].Equals("X") && coordinates[2, 0].Equals("X"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is X!");
+	            return false;
+            }
+            if (coordinates[0, 2].Equals("X") && coordinates[1, 2].Equals("X") && coordinates[2, 2].Equals("X"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is X!");
+	            return false;
+            }
+            
+            
             if (coordinates[0, 0].Equals("O") && coordinates[0, 1].Equals("O") && coordinates[0, 2].Equals("O"))
             {
                 Console.SetCursorPosition(0, 7);
@@ -95,6 +116,26 @@ namespace TicTacToe
                 Console.WriteLine("The winner is O!");
                 return false;
             }
+            if (coordinates[0, 1].Equals("O") && coordinates[1, 1].Equals("O") && coordinates[2, 1].Equals("O"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is O!");
+	            return false;
+            }
+            if (coordinates[0, 0].Equals("O") && coordinates[1, 0].Equals("O") && coordinates[2, 0].Equals("O"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is O!");
+	            return false;
+            }
+            if (coordinates[0, 2].Equals("O") && coordinates[1, 2].Equals("O") && coordinates[2, 2].Equals("O"))
+            {
+	            Console.SetCursorPosition(0, 7);
+	            Console.WriteLine("The winner is O!");
+	            return false;
+            }
+            
+            
             if (!coordinates[0, 0].Equals(" ") && !coordinates[0, 1].Equals(" ") && !coordinates[0, 2].Equals(" ") && !coordinates[1, 0].Equals(" ") && !coordinates[1, 1].Equals(" ") && !coordinates[1, 2].Equals(" ") && !coordinates[2, 0].Equals(" ") && !coordinates[2, 1].Equals(" ") && !coordinates[2, 2].Equals(" "))
             {
                 Console.SetCursorPosition(0, 7);
@@ -166,16 +207,9 @@ namespace TicTacToe
 							{
 								_moves.Add(_playa);
 								_playa.AddMove(_table, _player);
-
-								if (_player % 2 == 0)
-								{
-									Console.Write("X");
-								}
-								else
-								{
-									Console.Write("O");
-								}
-							
+								
+								Console.Write("X");
+									
 								_x = 6; _y = 3;
 								Console.SetCursorPosition(_x, _y);
 								_player++;
@@ -191,8 +225,14 @@ namespace TicTacToe
 				}
 				else
 				{
-					_playa = Computer.ClaculateMove(_table);
+					_playa = new Computer(2, 1);
+					_playa = _playa.CalculateMove(_table);
+					_moves.Add(_playa);
 					_playa.AddMove(_table, _player);
+
+					_x = 6; _y = 3;
+					Console.SetCursorPosition(_x, _y);
+					_player++;
 				}
 			}
 			

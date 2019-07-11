@@ -26,6 +26,7 @@
       <e p="TicTacToe.sln" t="IncludeFlat" />
       <e p="TicTacToe.UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ComputerTests.cs" t="Include" />
         <e p="GameTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

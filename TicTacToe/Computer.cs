@@ -4,38 +4,72 @@ namespace TicTacToe
 {
     public class Computer : Player
     {
-        public Computer()
-        {
-        }
-        
         public Computer(int x, int y) : base(x, y)
         {
             this.x = x;
             this.y = y;
         }
 
-        public static Computer ClaculateMove(string[,] table)
+        public override Player CalculateMove(string[,] table)
         {
-            bool found = false;
-            int x = 0;
-            int y = 0;
-
-            while (!found)
+            for (int i = 0; i < 3; i++)
             {
-                Computer c = new Computer(x, y);
-
-                if (c.CheckPlace(Game._Moves))
+                for (int j = 0; j < 3; j++)
                 {
-                    found = true;
-                }
-            }
+                    if (this.CheckPlace((Game._Moves)))
+                    {
+                        return new Computer(x, y);
+                    }
 
-            return new Computer(x, y);
+                    y += 2;
+                }
+                x += 4;
+            }
+            
+            return new Computer(0, 0);
         }
 
         public override void AddMove(string[,] table, int id)
         {
-            Console.WriteLine("Added move!");
+            if (this.x == 2 && this.y == 1) //line 1
+            {
+                table[0, 0] = "O";
+            }
+            else if (this.x == 6 && this.y == 1)
+            {
+                table[0, 1] = "O";
+            }
+            else if (this.x == 10 && this.y == 1)
+            {
+                table[0, 2] = "O";
+            }
+            else if (this.x == 2 && this.y == 3) //line 2
+            {
+                table[1, 0] = "O";
+            }
+            else if (this.x == 6 && this.y == 3)
+            {
+                table[1, 1] = "O";
+            }
+            else if (this.x == 10 && this.y == 3)
+            {
+                table[1, 2] = "O";
+            }
+            else if (this.x == 2 && this.y == 5) //line 3
+            {
+                table[2, 0] = "O";
+            }
+            else if (this.x == 6 && this.y == 5)
+            {
+                table[2, 1] = "O";
+            }
+            else if (this.x == 10 && this.y == 5)
+            {
+                table[2, 2] = "O";
+            }
+                        
+            Console.SetCursorPosition(x, y);
+            Console.Write("O");
         }
     }
 }
