@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace TicTacToe.UnitTests
 {
     [TestFixture]
-    public class GameTests
+    public class GameStateTests
     {
         [Test]
         public void IfGameStateWorks()
@@ -59,12 +59,19 @@ namespace TicTacToe.UnitTests
             
             Assert.IsFalse(Game.GameState(table));
         }
+    }
 
+    [TestFixture]
+    public class FakeInputForGameMenuTest : IPlayerInput
+    {
+        public ConsoleKey GetInput(){
+            return ConsoleKey.D1;
+        }
+        
         [Test]
-        [TestCase(ConsoleKey.D1, ConsoleKey.D2, ConsoleKey.D3)]
-        public void GameMenuHandlesKey(ConsoleKey k1, ConsoleKey k2, ConsoleKey k3)
+        public void GameMenuHandlesKey()
         {
-            Assert.AreEqual(k1, Game.GameMenu());
+            Assert.AreEqual(1, Game.GameMenu(new FakeInputForGameMenuTest()));
         }
     }
 }
