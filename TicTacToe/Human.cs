@@ -3,21 +3,21 @@ using System.Collections.Generic;
 
 namespace TicTacToe
 {
-	public class Player
+	public class Human
 	{
 		protected int x;
 		protected int y;
         
-        public Player(int x, int y)
+        public Human(int x, int y)
 		{
 			this.x = x;
 			this.y = y;
 		}
         
-        public bool CheckPlace(List<Player> move)
+        public bool CheckPlace(List<Human> move)
         {
 
-            foreach (Player p in move)
+            foreach (Human p in move)
             {
 				if (p.x == this.x && p.y == this.y)
                 {

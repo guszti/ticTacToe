@@ -7,16 +7,15 @@ namespace TicTacToe
 {
 	public class Game : IPlayerInput
 	{
-		private static List<Player> _moves;
-		private static bool _gameOn;
-		private static int _x;
-		private static int _y;
-		private static int _player;
-		private static Player _playa;
-		private static ConsoleKeyInfo _keyInfo;
-		private static string[,] _table;
+		private static List<Human> _moves;
+		private  static bool _gameOn;
+		private  static int _x;
+		private  static int _y;
+		private  static int _player;
+		private  static ConsoleKeyInfo _keyInfo;
+		private  static string[,] _table;
 
-		public static List<Player> _Moves
+		public static List<Human> _Moves
 		{
 			get { return _moves; }
 		}
@@ -363,7 +362,7 @@ namespace TicTacToe
 							Console.SetCursorPosition(_x, _y);
 							break;
 						case ConsoleKey.Enter:
-							Player playerH = new Player(_x, _y);
+							Human playerH = new Human(_x, _y);
 						
 							if (playerH.CheckPlace(_moves) == true)
 							{
@@ -436,12 +435,12 @@ namespace TicTacToe
 						Console.SetCursorPosition(_x, _y);
 						break;
 					case ConsoleKey.Enter:
-						_playa = new Player(_x, _y);
+						Human playerH = new Human(_x, _y);
 						
-						if (_playa.CheckPlace(_moves) == true)
+						if (playerH.CheckPlace(_moves) == true)
 						{
-							_moves.Add(_playa);
-							_playa.AddMove(_table, _player);
+							_moves.Add(playerH);
+							playerH.AddMove(_table, _player);
 
 							if (_player % 2 == 0)
 							{
@@ -475,7 +474,7 @@ namespace TicTacToe
             _x = 6;
             _y = 3;
             _player = 0;
-			_moves = new List<Player>();
+			_moves = new List<Human>();
 			_table = new [,] {{" "," "," "},
 							  {" "," "," "},
 							  {" "," "," "}

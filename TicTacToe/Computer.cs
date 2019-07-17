@@ -2,7 +2,7 @@ using System;
 
 namespace TicTacToe
 {
-    public class Computer : Player
+    public class Computer : Human
     {
         public Computer(int x, int y) : base(x, y)
         {
