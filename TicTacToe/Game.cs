@@ -363,12 +363,12 @@ namespace TicTacToe
 							Console.SetCursorPosition(_x, _y);
 							break;
 						case ConsoleKey.Enter:
-							_playa = new Player(_x, _y);
+							Player playerH = new Player(_x, _y);
 						
-							if (_playa.CheckPlace(_moves) == true)
+							if (playerH.CheckPlace(_moves) == true)
 							{
-								_moves.Add(_playa);
-								_playa.AddMove(_table, _player);
+								_moves.Add(playerH);
+								playerH.AddMove(_table, _player);
 								
 								Console.Write("X");
 									
@@ -387,10 +387,10 @@ namespace TicTacToe
 				}
 				else
 				{
-					_playa = new Computer(2, 1);
-					_playa = _playa.CalculateMove(_table);
-					_moves.Add(_playa);
-					_playa.AddMove(_table, _player);
+					Computer playerC = new Computer(2, 1);
+					playerC = playerC.CalculateMove(_table);
+					_moves.Add(playerC);
+					playerC.AddMove(_table, _player);
 					
 					_x = 6; _y = 3;
 					Console.SetCursorPosition(_x, _y);

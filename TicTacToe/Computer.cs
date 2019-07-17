@@ -10,7 +10,7 @@ namespace TicTacToe
             this.y = y;
         }
 
-        public override Player CalculateMove(string[,] table)
+        public Computer CalculateMove(string[,] table)
         {
             for (int i = 0; i < 3; i++)
             {

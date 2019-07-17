@@ -14,8 +14,6 @@ namespace TicTacToe
 			this.y = y;
 		}
         
-        public virtual Player CalculateMove(string[,] table){ return new Player(0, 0); }
-        
         public bool CheckPlace(List<Player> move)
         {
 
