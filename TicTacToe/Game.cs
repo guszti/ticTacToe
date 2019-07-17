@@ -7,7 +7,7 @@ namespace TicTacToe
 {
 	public class Game : IPlayerInput
 	{
-		private static List<Human> _moves;
+		private static List<Player> _moves;
 		private  static bool _gameOn;
 		private  static int _x;
 		private  static int _y;
@@ -15,7 +15,7 @@ namespace TicTacToe
 		private  static ConsoleKeyInfo _keyInfo;
 		private  static string[,] _table;
 
-		public static List<Human> _Moves
+		public static List<Player> _Moves
 		{
 			get { return _moves; }
 		}
@@ -474,7 +474,7 @@ namespace TicTacToe
             _x = 6;
             _y = 3;
             _player = 0;
-			_moves = new List<Human>();
+			_moves = new List<Player>();
 			_table = new [,] {{" "," "," "},
 							  {" "," "," "},
 							  {" "," "," "}

@@ -3,31 +3,56 @@ using System.Collections.Generic;
 
 namespace TicTacToe
 {
-	public class Human
+	public class Human : Player
 	{
-		protected int x;
-		protected int y;
-        
         public Human(int x, int y)
 		{
 			this.x = x;
 			this.y = y;
 		}
+
+        public override int X
+        {
+            get { return x; }
+        }
+
+        public override int Y
+        {
+            get { return y; }
+        }
         
-        public bool CheckPlace(List<Human> move)
+        public override bool CheckPlace(List<Player> move)
         {
 
-            foreach (Human p in move)
+            /*foreach (Human p in move)
             {
 				if (p.x == this.x && p.y == this.y)
                 {
                     return false;
                 }
             }
+            return true;*/
+            foreach (var p in move)
+            {
+                if (p is Human)
+                {
+                    if (p.X == this.x && p.Y == this.y)
+                    {
+                        return false;
+                    }
+                }
+                else if(p is Computer)
+                {
+                    if (p.X == this.x && p.Y == this.y)
+                    {
+                        return false;
+                    }
+                }
+            }
             return true;
         }
 
-        public virtual void AddMove(string[,] table, int id)
+        public override void AddMove(string[,] table, int id)
         {
             if (this.x == 2 && this.y == 1) //line 1
             {

@@ -1,15 +1,48 @@
 using System;
+using System.Collections.Generic;
 
 namespace TicTacToe
 {
-    public class Computer : Human
+    public class Computer : Player
     {
-        public Computer(int x, int y) : base(x, y)
+        public Computer(int x, int y)
         {
             this.x = x;
             this.y = y;
         }
+        
+        public override int X
+        {
+            get { return x; }
+        }
 
+        public override int Y
+        {
+            get { return y; }
+        }
+
+        public override bool CheckPlace(List<Player> move)
+        {
+            foreach (var p in move)
+            {
+                if (p is Human)
+                {
+                    if (p.X == this.x && p.Y == this.y)
+                    {
+                        return false;
+                    }
+                }
+                else if(p is Computer)
+                {
+                    if (p.X == this.x && p.Y == this.y)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        
         public Computer CalculateMove(string[,] table)
         {
             for (int i = 0; i < 3; i++)
