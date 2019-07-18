@@ -14,21 +14,20 @@ namespace TicTacToe
         public override int X
         {
             get { return x; }
+            set { x = value; }
         }
 
         public override int Y
         {
             get { return y; }
+            set { y = value; }
         }
 
-        public override bool CheckPlace(List<Player> move)
+        public override bool CheckPlace(string[,] moves)
         {
-            foreach (var p in move)
+            if (!moves[x, y].Equals(" "))
             {
-                if (p.X == this.x && p.Y == this.y)
-                {
-                    return false;
-                }
+                return false;
             }
             return true;
         }
@@ -39,16 +38,16 @@ namespace TicTacToe
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    if (this.CheckPlace((Game._Moves)))
+                    if (this.CheckPlace((Game._Table)))
                     {
                         return new Computer(this.x, this.y);
                     }
 
-                    this.y += 2;
+                    this.y++;
                 }
 
-                this.y = 1;
-                this.x += 4;
+                this.y = 0;
+                this.x++;
             }
             
             return new Computer(0, 0);
@@ -56,45 +55,60 @@ namespace TicTacToe
 
         public override void AddMove(string[,] table, int id)
         {
-            if (this.x == 2 && this.y == 1) //line 1
+            if (id % 2 == 0)
             {
-                table[0, 0] = "O";
+                table[x, y] = "X";
             }
-            else if (this.x == 6 && this.y == 1)
+            else
             {
-                table[0, 1] = "O";
+                table[x, y] = "O";
             }
-            else if (this.x == 10 && this.y == 1)
+
+            if (this.x == 0 && this.y == 0) //line 1
             {
-                table[0, 2] = "O";
+                Console.SetCursorPosition(2, 1);
+                Console.Write("O");
             }
-            else if (this.x == 2 && this.y == 3) //line 2
+            else if (this.x == 1 && this.y == 0)
             {
-                table[1, 0] = "O";
+                Console.SetCursorPosition(6, 1);
+                Console.Write("O");
             }
-            else if (this.x == 6 && this.y == 3)
+            else if (this.x == 2 && this.y == 0)
             {
-                table[1, 1] = "O";
+                Console.SetCursorPosition(10, 1);
+                Console.Write("O");
             }
-            else if (this.x == 10 && this.y == 3)
+            else if (this.x == 0 && this.y == 1) //line 2
             {
-                table[1, 2] = "O";
+                Console.SetCursorPosition(2, 3);
+                Console.Write("O");
             }
-            else if (this.x == 2 && this.y == 5) //line 3
+            else if (this.x == 1 && this.y == 1)
             {
-                table[2, 0] = "O";
+                Console.SetCursorPosition(6, 3);
+                Console.Write("O");
             }
-            else if (this.x == 6 && this.y == 5)
+            else if (this.x == 2 && this.y == 1)
             {
-                table[2, 1] = "O";
+                Console.SetCursorPosition(10, 3);
+                Console.Write("O");
             }
-            else if (this.x == 10 && this.y == 5)
+            else if (this.x == 0 && this.y == 2) //line 3
             {
-                table[2, 2] = "O";
+                Console.SetCursorPosition(2, 5);
+                Console.Write("O");
             }
-                        
-            Console.SetCursorPosition(x, y);
-            Console.Write("O");
+            else if (this.x == 1 && this.y == 2)
+            {
+                Console.SetCursorPosition(6, 5);
+                Console.Write("O");
+            }
+            else if (this.x == 2 && this.y == 2)
+            {
+                Console.SetCursorPosition(10, 5);
+                Console.Write("O");
+            }
         }
     }
 }

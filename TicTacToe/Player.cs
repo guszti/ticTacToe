@@ -8,11 +8,11 @@ namespace TicTacToe
         protected int x;
         protected int y;
 
-        public abstract int X { get; }
-        public abstract  int Y { get; }
+        public abstract int X { get; set; }
+        public abstract  int Y { get; set; }
         
         
-        public abstract bool CheckPlace(List<Player> move);
+        public abstract bool CheckPlace(string[,] moves);
         public abstract void AddMove(string[,] table, int id);
     }
 }

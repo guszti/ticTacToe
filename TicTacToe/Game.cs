@@ -7,7 +7,6 @@ namespace TicTacToe
 {
 	public class Game : IPlayerInput
 	{
-		private static List<Player> _moves;
 		private  static bool _gameOn;
 		private  static int _x;
 		private  static int _y;
@@ -15,9 +14,9 @@ namespace TicTacToe
 		private  static ConsoleKeyInfo _keyInfo;
 		private  static string[,] _table;
 
-		public static List<Player> _Moves
+		public static string[,] _Table
 		{
-			get { return _moves; }
+			get { return _table; }
 		}
 
 		public ConsoleKey GetInput()
@@ -170,6 +169,8 @@ namespace TicTacToe
 			DrawTable();
 			Console.SetCursorPosition(_x, _y);
 			
+			Human playerH = new Human(1, 1);
+			
 			while (_gameOn)
 			{
 				if (_player % 2 == 0)
@@ -180,34 +181,45 @@ namespace TicTacToe
 					{
 						case ConsoleKey.DownArrow:
 							if (_y < 5)
+							{
 								_y += 2;
-							Console.SetCursorPosition(_x, _y);
+								playerH.Y++;
+								Console.SetCursorPosition(_x, _y);
+							}
 							break;
 						case ConsoleKey.UpArrow:
 							if (_y > 1)
+							{
 								_y -= 2;
-							Console.SetCursorPosition(_x, _y);
+								playerH.Y--;
+								Console.SetCursorPosition(_x, _y);
+							}
 							break;
 						case ConsoleKey.RightArrow:
 							if (_x < 10)
+							{
 								_x += 4;
-							Console.SetCursorPosition(_x, _y);
+								playerH.X++;
+								Console.SetCursorPosition(_x, _y);
+							}
 							break;
 						case ConsoleKey.LeftArrow:
 							if (_x > 2)
+							{
 								_x -= 4;
-							Console.SetCursorPosition(_x, _y);
+								playerH.X--;
+								Console.SetCursorPosition(_x, _y);	
+							}
 							break;
 						case ConsoleKey.Enter:
-							Human playerH = new Human(_x, _y);
-						
-							if (playerH.CheckPlace(_moves) == true)
+							if (playerH.CheckPlace(_table) == true)
 							{
-								_moves.Add(playerH);
 								playerH.AddMove(_table, _player);
-								
+
 								Console.Write("X");
 									
+								playerH = new Human(1, 1);
+							
 								_x = 6; _y = 3;
 								Console.SetCursorPosition(_x, _y);
 								_player++;
@@ -219,13 +231,12 @@ namespace TicTacToe
 							Console.Clear();
 							_gameOn = false;
 							break;
-					}
+					} 
 				}
 				else
 				{
-					Computer playerC = new Computer(2, 1);
+					Computer playerC = new Computer(0, 0);
 					playerC = playerC.CalculateMove(_table);
-					_moves.Add(playerC);
 					playerC.AddMove(_table, _player);
 					
 					_x = 6; _y = 3;
@@ -245,6 +256,8 @@ namespace TicTacToe
 			DrawTable();
 			Console.SetCursorPosition(_x, _y);
 			
+			Human playerH = new Human(1, 1);
+
 			while (_gameOn)
 			{
 				_keyInfo = Console.ReadKey(true);
@@ -253,30 +266,39 @@ namespace TicTacToe
 				{
 					case ConsoleKey.DownArrow:
 						if (_y < 5)
+						{
 							_y += 2;
-						Console.SetCursorPosition(_x, _y);
+							playerH.Y++;
+							Console.SetCursorPosition(_x, _y);
+						}
 						break;
 					case ConsoleKey.UpArrow:
 						if (_y > 1)
+						{
 							_y -= 2;
-						Console.SetCursorPosition(_x, _y);
+							playerH.Y--;
+							Console.SetCursorPosition(_x, _y);
+						}
 						break;
 					case ConsoleKey.RightArrow:
 						if (_x < 10)
+						{
 							_x += 4;
-						Console.SetCursorPosition(_x, _y);
+							playerH.X++;
+							Console.SetCursorPosition(_x, _y);
+						}
 						break;
 					case ConsoleKey.LeftArrow:
 						if (_x > 2)
+						{
 							_x -= 4;
-						Console.SetCursorPosition(_x, _y);
+							playerH.X--;
+							Console.SetCursorPosition(_x, _y);	
+						}
 						break;
 					case ConsoleKey.Enter:
-						Human playerH = new Human(_x, _y);
-						
-						if (playerH.CheckPlace(_moves) == true)
+						if (playerH.CheckPlace(_table) == true)
 						{
-							_moves.Add(playerH);
 							playerH.AddMove(_table, _player);
 
 							if (_player % 2 == 0)
@@ -287,6 +309,8 @@ namespace TicTacToe
 							{
 								Console.Write("O");
 							}
+							
+							playerH = new Human(1, 1);
 							
 							_x = 6; _y = 3;
 							Console.SetCursorPosition(_x, _y);
@@ -311,7 +335,6 @@ namespace TicTacToe
             _x = 6;
             _y = 3;
             _player = 0;
-			_moves = new List<Player>();
 			_table = new [,] {{" "," "," "},
 							  {" "," "," "},
 							  {" "," "," "}
