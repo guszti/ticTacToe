@@ -23,30 +23,11 @@ namespace TicTacToe
         
         public override bool CheckPlace(List<Player> move)
         {
-
-            /*foreach (Human p in move)
-            {
-				if (p.x == this.x && p.y == this.y)
-                {
-                    return false;
-                }
-            }
-            return true;*/
             foreach (var p in move)
             {
-                if (p is Human)
+                if (p.X == this.x && p.Y == this.y)
                 {
-                    if (p.X == this.x && p.Y == this.y)
-                    {
-                        return false;
-                    }
-                }
-                else if(p is Computer)
-                {
-                    if (p.X == this.x && p.Y == this.y)
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
             return true;

@@ -40,249 +40,86 @@ namespace TicTacToe
 
 		public static bool GameState(string[,] coordinates)
 		{
-            if (coordinates[0, 0].Equals("X") && coordinates[0, 1].Equals("X") && coordinates[0, 2].Equals("X"))
+			string[] tripleRow = new string[3];
+            string[] tripleCol = new string[3];
+            int evenGame = 0;
+
+            for (int i = 0; i < 3; i++)
             {
-	            try
+	            for (int j = 0; j < 3; j++)
 	            {
-		            Console.SetCursorPosition(0, 7);
+		            tripleRow[j] = coordinates[i, j];
+		            tripleCol[j] = coordinates[j, i];
+
+		            if (!coordinates[i, j].Equals(" "))
+		            {
+			            evenGame++;
+		            }
 	            }
-	            catch (Exception ex)
+
+	            if (!tripleRow[0].Equals(" ") && tripleRow[0].Equals(tripleRow[1]) && tripleRow[0].Equals(tripleRow[2]))
 	            {
-		            Console.WriteLine(ex.Message);
-	            }
+		            try
+		            {
+			            Console.SetCursorPosition(0, 7);
+		            }
+		            catch (Exception ex)
+		            {
+			            Console.WriteLine(ex.Message);
+		            }
 	            
-                Console.WriteLine("The winner is X!");
-                return false;
-            }
-            if (coordinates[1, 0].Equals("X") && coordinates[1, 1].Equals("X") && coordinates[1, 2].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
+		            Console.WriteLine("The winner is {0}!", tripleRow[0]);
+		            
+		            return false;
 	            }
-	            catch (Exception ex)
+	            if (!tripleCol[0].Equals(" ") && tripleCol[0].Equals(tripleCol[1]) && tripleCol[0].Equals(tripleCol[2]))
 	            {
-		            Console.WriteLine(ex.Message);
-	            }
+		            try
+		            {
+			            Console.SetCursorPosition(0, 7);
+		            }
+		            catch (Exception ex)
+		            {
+			            Console.WriteLine(ex.Message);
+		            }
 	            
-	            Console.WriteLine("The winner is X!");
-                return false;
-            }
-            if (coordinates[2, 0].Equals("X") && coordinates[2, 1].Equals("X") && coordinates[2, 2].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
+		            Console.WriteLine("The winner is {0}!", tripleCol[0]);
+		            
+		            return false;
 	            }
-	            catch (Exception ex)
+	            if (!coordinates[1, 1].Equals(" ") && (coordinates[1, 1].Equals(coordinates[0, 0]) && coordinates[1, 1].Equals(coordinates[2, 2]) || (coordinates[1, 1].Equals(coordinates[0, 2]) && coordinates[1, 1].Equals(coordinates[2, 0]))))
 	            {
-		            Console.WriteLine(ex.Message);
-	            }
+		            try
+		            {
+			            Console.SetCursorPosition(0, 7);
+		            }
+		            catch (Exception ex)
+		            {
+			            Console.WriteLine(ex.Message);
+		            }
 	            
-                Console.WriteLine("The winner is X!");
-                return false;
-            }
-            if (coordinates[0, 0].Equals("X") && coordinates[1, 1].Equals("X") && coordinates[2, 2].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
+		            Console.WriteLine("The winner is {0}!", coordinates[1, 1]);
+		            
+		            return false;
 	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is X!");
-                return false;
-            }
-            if (coordinates[0, 2].Equals("X") && coordinates[1, 1].Equals("X") && coordinates[2, 0].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is X!");
-                return false;
-            }
-            if (coordinates[0, 1].Equals("X") && coordinates[1, 1].Equals("X") && coordinates[2, 1].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is X!");
-	            return false;
-            }
-            if (coordinates[0, 0].Equals("X") && coordinates[1, 0].Equals("X") && coordinates[2, 0].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is X!");
-	            return false;
-            }
-            if (coordinates[0, 2].Equals("X") && coordinates[1, 2].Equals("X") && coordinates[2, 2].Equals("X"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is X!");
-	            return false;
-            }
-            
-            
-            if (coordinates[0, 0].Equals("O") && coordinates[0, 1].Equals("O") && coordinates[0, 2].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is O!");
-                return false;
-            }
-            if (coordinates[1, 0].Equals("O") && coordinates[1, 1].Equals("O") && coordinates[1, 2].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is O!");
-                return false;
-            }
-            if (coordinates[2, 0].Equals("O") && coordinates[2, 1].Equals("O") && coordinates[2, 2].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is O!");
-                return false;
-            }
-            if (coordinates[0, 0].Equals("O") && coordinates[1, 1].Equals("O") && coordinates[2, 2].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is O!");
-                return false;
-            }
-            if (coordinates[0, 2].Equals("O") && coordinates[1, 1].Equals("O") && coordinates[2, 0].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The winner is O!");
-                return false;
-            }
-            if (coordinates[0, 1].Equals("O") && coordinates[1, 1].Equals("O") && coordinates[2, 1].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is O!");
-	            return false;
-            }
-            if (coordinates[0, 0].Equals("O") && coordinates[1, 0].Equals("O") && coordinates[2, 0].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is O!");
-	            return false;
-            }
-            if (coordinates[0, 2].Equals("O") && coordinates[1, 2].Equals("O") && coordinates[2, 2].Equals("O"))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-	            Console.WriteLine("The winner is O!");
-	            return false;
-            }
-            
-            
-            if (!coordinates[0, 0].Equals(" ") && !coordinates[0, 1].Equals(" ") && !coordinates[0, 2].Equals(" ") && !coordinates[1, 0].Equals(" ") && !coordinates[1, 1].Equals(" ") && !coordinates[1, 2].Equals(" ") && !coordinates[2, 0].Equals(" ") && !coordinates[2, 1].Equals(" ") && !coordinates[2, 2].Equals(" "))
-            {
-	            try
-	            {
-		            Console.SetCursorPosition(0, 7);
-	            }
-	            catch (Exception ex)
-	            {
-		            Console.WriteLine(ex.Message);
-	            }
-	            
-                Console.WriteLine("The game is even!");
-                return false;
             }
 
+            if (evenGame == 9)
+            {
+	            try
+	            {
+		            Console.SetCursorPosition(0, 7);
+	            }
+	            catch (Exception ex)
+	            {
+		            Console.WriteLine(ex.Message);
+	            }
+	            
+	            Console.WriteLine("Game is even!");
+		            
+	            return false;
+            }
+            
             return true;
 		}
 

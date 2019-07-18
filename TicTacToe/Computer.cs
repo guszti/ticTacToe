@@ -25,19 +25,9 @@ namespace TicTacToe
         {
             foreach (var p in move)
             {
-                if (p is Human)
+                if (p.X == this.x && p.Y == this.y)
                 {
-                    if (p.X == this.x && p.Y == this.y)
-                    {
-                        return false;
-                    }
-                }
-                else if(p is Computer)
-                {
-                    if (p.X == this.x && p.Y == this.y)
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
             return true;
@@ -51,14 +41,14 @@ namespace TicTacToe
                 {
                     if (this.CheckPlace((Game._Moves)))
                     {
-                        return new Computer(x, y);
+                        return new Computer(this.x, this.y);
                     }
 
-                    y += 2;
+                    this.y += 2;
                 }
 
-                y = 1;
-                x += 4;
+                this.y = 1;
+                this.x += 4;
             }
             
             return new Computer(0, 0);
