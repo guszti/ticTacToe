@@ -37,7 +37,7 @@ namespace TicTacToe
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    if (this.CheckPlace((Game._Table)))
+                    if (this.CheckPlace(table))
                     {
                         return new Computer(this.x, this.y);
                     }

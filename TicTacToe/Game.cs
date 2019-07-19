@@ -11,10 +11,10 @@ namespace TicTacToe
 		private  static ConsoleKeyInfo _keyInfo;
 		private  static string[,] _table;
 
-		public static string[,] _Table
+		/*public static string[,] _Table
 		{
 			get { return _table; }
-		}
+		}*/
 
 		public ConsoleKey GetInput()
 		{

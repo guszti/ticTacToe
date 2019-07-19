@@ -8,7 +8,7 @@ namespace TicTacToe.UnitTests
     public class GameStateTests
     {
         [Test]
-        public void IfGameStateWorks()
+        public void GameState_Works()
         {
             string[,] table = {{" "," "," "},
                                {" "," "," "},
@@ -69,7 +69,7 @@ namespace TicTacToe.UnitTests
         }
         
         [Test]
-        public void GameMenuHandlesKey()
+        public void GameMenu_handles_key()
         {
             Assert.AreEqual(1, Game.GameMenu(new FakeInputForGameMenuTest()));
         }
